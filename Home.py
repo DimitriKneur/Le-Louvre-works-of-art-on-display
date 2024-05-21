@@ -13,7 +13,8 @@ st.text("into two distinct parts :")
 st.text("")
 
 # Lien vers la section "Antiquities"
-with st.expander("Antiquities - [Link](https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities){target='_self'}"):
+st.link_button("Antiquities", "https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities")
+with st.expander("Click here to see what you will find inside"):
     st.markdown("- Greek, Etruscan and Roman Antiquities")
     st.markdown("- Oriental Antiquities")
     st.markdown("- Egyptian Antiquities")
@@ -21,7 +22,8 @@ with st.expander("Antiquities - [Link](https://dimitri-kneur-le-louvre-works-of-
 st.text("")
 
 # Lien vers la section "Other Collections"
-with st.expander("Other Collections"):
+st.link_button("Other collections", "https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Other_Collections")
+with st.expander("Click here to see what you will find inside"):
     st.markdown("- Paintings")
     st.markdown("- Medieval, Renaissance and Modern Works of Art")
     st.markdown("- Medieval, Renaissance and Modern Sculpture")
