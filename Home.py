@@ -12,14 +12,14 @@ st.text("into two distinct parts :")
 
 st.text("")
 
-st.markdown("**A) Antiquities part**: here you will find [](https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities)")
+st.markdown("**[A) Antiquities](https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities)**: here you will find")
 st.markdown("  - Greek, Etruscan and Roman Antiquities")
 st.markdown("  - Oriental Antiquities")
 st.markdown("  - Egyptian Antiquities")
 
 st.text("")
 
-st.markdown("**[B) Other collections](https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Other_Collections)** : here you will find ")
+st.markdown("**[B) Other collections](https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Other_Collections)** : here you will find")
 st.markdown("  - Paintings")
 st.markdown("  - Medieval, Renaissance and Modern Works of Art")
 st.markdown("  - Medieval, Renaissance and Modern Sculpture")
