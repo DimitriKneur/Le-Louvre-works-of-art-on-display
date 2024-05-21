@@ -13,7 +13,7 @@ st.text("into two distinct parts :")
 st.text("")
 
 # Lien vers la section "Antiquities"
-st.link_button("Antiquities", "https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities")
+st.page_link("pages/Antiquities.py", label="Antiquities", icon="1️⃣")
 with st.expander("Click here to see what you will find inside"):
     st.markdown("- Greek, Etruscan and Roman Antiquities")
     st.markdown("- Oriental Antiquities")
