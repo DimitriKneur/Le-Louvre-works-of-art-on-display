@@ -6,13 +6,13 @@ st.title("Other Collections on Display Database - Le Louvre Museum")
 st.text("")
 
 st.text("You will find here the table showing the artworks of the following categories :")
-    st.markdown("- Paintings")
-    st.markdown("- Medieval, Renaissance and Modern Works of Art")
-    st.markdown("- Medieval, Renaissance and Modern Sculpture")
-    st.markdown("- Islamic Arts")
-    st.markdown("- Louvre History Department")
-    st.markdown("- Byzantine and Oriental Christian Arts")
-    st.markdown("- Eugène-Delacroix National Museum")
+st.markdown("- Paintings")
+st.markdown("- Medieval, Renaissance and Modern Works of Art")
+st.markdown("- Medieval, Renaissance and Modern Sculpture")
+st.markdown("- Islamic Arts")
+st.markdown("- Louvre History Department")
+st.markdown("- Byzantine and Oriental Christian Arts")
+st.markdown("- Eugène-Delacroix National Museum")
 
 st.text("")
 
@@ -40,5 +40,6 @@ st.data_editor(
 st.text("")
 
 st.text("Short of inspiration ? Some of the most famous artworks of these categories are :")
+st.markdown("- ")
 
 st.text("")
