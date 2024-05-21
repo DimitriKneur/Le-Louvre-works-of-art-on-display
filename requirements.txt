@@ -1,4 +1,3 @@
 streamlit
 pandas
-IPython.core.display
 itables

@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 from itables import show, init_notebook_mode
-from IPython.core.display import display, HTML
 
 st.title("Antiquities on Display Database - Le Louvre Museum")
 
