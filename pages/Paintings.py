@@ -1,18 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Other Collections on Display Database - Le Louvre Museum")
+st.title("Paintings on Display Database - Le Louvre Museum")
 
 st.text("")
 
-st.text("You will find here the table showing the artworks of the following categories :")
-st.markdown("- Paintings")
-st.markdown("- Medieval, Renaissance and Modern Works of Art")
-st.markdown("- Medieval, Renaissance and Modern Sculpture")
-st.markdown("- Islamic Arts")
-st.markdown("- Louvre History Department")
-st.markdown("- Byzantine and Oriental Christian Arts")
-st.markdown("- Eugène-Delacroix National Museum")
+st.text("Le Louvre is known to host some of the finest paintings in the art history.")
+st.text("Have a look.")
 
 st.text("")
 
@@ -20,7 +14,7 @@ st.text("If you want to display in full width, click on the top-right corner 'Fu
 st.text("button of the table :")
 
 # Charger les données
-df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_other_collections.csv')
+df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_paintings.csv')
 
 df = df[["image", "title", "creatorName", "startYear", "endYear", "collection", "url",]]
 
@@ -39,7 +33,7 @@ st.data_editor(
 
 st.text("")
 
-st.text("Short of inspiration ? Some of the most famous artworks of these categories are :")
+st.text("Short of inspiration ? Some of the most famous paintings are :")
 st.markdown("- La Joconde")
 st.markdown("- Les Noces de Cana")
 st.markdown("- La Liberté guidant le peuple")
