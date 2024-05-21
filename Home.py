@@ -18,6 +18,8 @@ st.text("Navigate now through all the artworks by clicking the link below : ")
 # Lien vers la section "All_Artworks"
 st.page_link("pages/All_Artworks.py", label="All Artworks", icon="💯")
 
+st.text("")
+
 st.text("Maybe you prefer explore only certain categories ?")
 st.text("Here are the most famous ones : ")
 
