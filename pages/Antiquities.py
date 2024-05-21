@@ -34,6 +34,8 @@ st.data_editor(
     hide_index=True,
 )
 
+st.text("")
+
 st.text("Short of inspiration ? Some of the most famous artworks of these categories are :")
 st.markdown("- Victoire de Samothrace")
 st.markdown("- Vénus de Milo")
