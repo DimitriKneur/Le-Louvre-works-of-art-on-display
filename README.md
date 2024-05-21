@@ -1,4 +1,4 @@
-# Streamlit application - Le Louvre Museum artworks on display
+# Streamlit App. - Le Louvre Museum artworks on display
 
 <br>
 
