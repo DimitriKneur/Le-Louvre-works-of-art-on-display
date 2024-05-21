@@ -35,7 +35,7 @@ df = df.drop(['image', 'room', 'url'], axis=1)
 # Afficher toutes les colonnes
 pd.set_option('display.max_columns', None)
 
-show(df,
+st.write(show(df,
      maxBytes=0,
      autoWidth=False,
      scrollX=True,
@@ -45,4 +45,4 @@ show(df,
      column_filters="header",
      layout={"topEnd": None},
      lengthMenu=[5, 10, 20, 50]
-     )
+     ))
