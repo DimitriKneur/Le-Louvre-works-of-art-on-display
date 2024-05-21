@@ -22,7 +22,7 @@ with st.expander("Click here to see what you will find inside"):
 st.text("")
 
 # Lien vers la section "Other Collections"
-st.link_button("Other collections", "https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Other_Collections")
+st.page_link("pages/Other_Collections.py", label="Other_Collections", icon="🖼️")
 with st.expander("Click here to see what you will find inside"):
     st.markdown("- Paintings")
     st.markdown("- Medieval, Renaissance and Modern Works of Art")
