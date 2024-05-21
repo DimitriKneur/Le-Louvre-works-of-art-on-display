@@ -5,7 +5,7 @@ from streamlit_extras.switch_page_button import switch_page
 def example():
     want_to_contribute = st.button("I want to contribute!")
     if want_to_contribute:
-        switch_page("Antiquities")
+        switch_page("https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities")
 
 st.title("Le Louvre Works of Art on Display - Databases")
 
