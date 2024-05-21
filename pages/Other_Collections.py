@@ -22,7 +22,7 @@ st.text("button of the table :")
 # Charger les données
 df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_other_collections.csv')
 
-df = df[["image", "title", "collection", "creatorName", "url",]]
+df = df[["image", "title", "creatorName", "startYear", "endYear", "collection", "url",]]
 
 st.data_editor(
     df,
@@ -40,6 +40,9 @@ st.data_editor(
 st.text("")
 
 st.text("Short of inspiration ? Some of the most famous artworks of these categories are :")
-st.markdown("- ")
+st.markdown("- La Joconde")
+st.markdown("- Les Noces de Cana")
+st.markdown("- La Liberté guidant le peuple")
+st.markdown("- Le radeau de la Méduse")
 
 st.text("")

@@ -19,7 +19,7 @@ st.text("button of the table :")
 # Charger les données
 df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_antiquities.csv')
 
-df = df[["image", "title", "collection", "creatorName", "url",]]
+df = df[["image", "title", "creatorName", "startYear", "endYear", "collection", "url",]]
 
 st.data_editor(
     df,
