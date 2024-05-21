@@ -24,4 +24,4 @@ Here is the link of the application where you can visualize all the artwork info
 
 | Step | Used Tools |
 |------|------------|
-| Data Vizualization | <img style="padding:2px" src="https://img.shields.io/badge/streamlit-FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=black"/> |   
+| Data Exploration | <img style="padding:2px" src="https://img.shields.io/badge/streamlit-FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=black"/> |   
