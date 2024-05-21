@@ -13,7 +13,7 @@ st.text("into two distinct parts :")
 st.text("")
 
 # Lien vers la section "Antiquities"
-st.page_link("pages/Antiquities.py", label="Antiquities", icon="1️⃣")
+st.page_link("pages/Antiquities.py", label="Antiquities", icon="🏺")
 with st.expander("Click here to see what you will find inside"):
     st.markdown("- Greek, Etruscan and Roman Antiquities")
     st.markdown("- Oriental Antiquities")
