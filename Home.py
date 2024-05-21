@@ -1,5 +1,12 @@
 import streamlit as st
 
+from streamlit_extras.switch_page_button import switch_page
+
+def example():
+    want_to_contribute = st.button("I want to contribute!")
+    if want_to_contribute:
+        switch_page("Antiquities")
+
 st.title("Le Louvre Works of Art on Display - Databases")
 
 st.text("Welcome, dear explorer!")
@@ -13,7 +20,7 @@ st.text("into two distinct parts :")
 st.text("")
 
 # Lien vers la section "Antiquities"
-st.link_button("Antiquities", "https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities", target='_self')
+st.link_button("Antiquities", "https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities")
 with st.expander("Click here to see what you will find inside"):
     st.markdown("- Greek, Etruscan and Roman Antiquities")
     st.markdown("- Oriental Antiquities")
