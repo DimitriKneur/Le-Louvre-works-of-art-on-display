@@ -13,7 +13,7 @@ st.text("into two distinct parts :")
 st.text("")
 
 # Lien vers la section "Antiquities"
-with st.expander("[Antiquities](https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities){target='_self'}"):
+with st.expander("Antiquities - [Link](https://dimitri-kneur-le-louvre-works-of-art-on-display.streamlit.app/Antiquities){target='_self'}"):
     st.markdown("- Greek, Etruscan and Roman Antiquities")
     st.markdown("- Oriental Antiquities")
     st.markdown("- Egyptian Antiquities")
