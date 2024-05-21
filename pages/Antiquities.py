@@ -8,6 +8,8 @@ st.text("Welcome !")
 # Charger les données
 df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_antiquities.csv')
 
+df = df[["image", "title", "collection", "creatorName", "url",]]
+
 st.data_editor(
     df,
     column_config={
@@ -20,10 +22,3 @@ st.data_editor(
     },
     hide_index=True,
 )
-
-
-
-# Afficher les données
-st.write("### Le Louvre Works of Art - Antiquities")
-
-st.dataframe(df, use_container_width=True)
