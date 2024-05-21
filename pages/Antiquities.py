@@ -22,10 +22,5 @@ def render_dataframe_with_links(dataframe):
 
 # Afficher les données
 st.write("### Le Louvre Works of Art - Antiquities")
-st.markdown("<table>", unsafe_allow_html=True)
-# Afficher l'en-tête
-header_html = "".join([f"<th>{col}</th>" for col in df.columns])
-st.markdown(f"<tr>{header_html}</tr>", unsafe_allow_html=True)
-# Afficher les lignes
-render_dataframe_with_links(df)
-st.markdown("</table>", unsafe_allow_html=True)
+
+st.dataframe(df, use_container_width=True)
