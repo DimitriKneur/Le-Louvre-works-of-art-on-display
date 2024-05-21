@@ -14,6 +14,9 @@ st.data_editor(
         "url": st.column_config.LinkColumn(
             "Link", display_text="Link to artwork"
         ),
+        "image": st.column_config.ImageColumn(
+            "Preview Image"
+        )
     },
     hide_index=True,
 )
