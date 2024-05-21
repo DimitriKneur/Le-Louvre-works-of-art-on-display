@@ -8,30 +8,24 @@ st.text("Welcome !")
 # Charger les données
 df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_antiquities.csv')
 
-# Créer une colonne 'title_with_link' avec les liens cliquables
-df["title_with_link"] = [
+# Ajouter une colonne de liens cliquables à la colonne "title"
+df["title"] = [
     f'<a href="{url}">{title}</a>' for title, url in zip(df["title"], df["url"])
 ]
 
-# Afficher les données avec les liens cliquables
+# Fonction pour afficher le DataFrame avec les liens cliquables
+def render_dataframe_with_links(dataframe):
+    for index, row in dataframe.iterrows():
+        # Concaténer les colonnes avec un formatage HTML
+        row_html = "".join([f"<td>{row[col]}</td>" if col != "title" else f"<td>{row['title']}</td>" for col in dataframe.columns])
+        st.markdown(f"<tr>{row_html}</tr>", unsafe_allow_html=True)
+
+# Afficher les données
 st.write("### Le Louvre Works of Art - Antiquities")
-for index, row in df.iterrows():
-    st.markdown(f'{row["title_with_link"]}', unsafe_allow_html=True)
-
-# Alternative using data_editor with only titles displayed
-# But it doesn't support hyperlink columns directly as of now
-# st.data_editor(
-#     df[['title', 'snapshot']],  # Display only the title and snapshot columns
-#     column_config={
-#         "title": st.column_config.LinkColumn(
-#             "Artwork Title",
-#             help="Name of the artwork",
-#             validate="^https://[a-z]+\.streamlit\.app$",
-#             max_chars=100,
-#             display_text="https://(.*?)\.streamlit\.app"
-#         ),
-#     },
-#     hide_index=True,
-# )
-
-st.dataframe(df, use_container_width=True)
+st.markdown("<table>", unsafe_allow_html=True)
+# Afficher l'en-tête
+header_html = "".join([f"<th>{col}</th>" for col in df.columns])
+st.markdown(f"<tr>{header_html}</tr>", unsafe_allow_html=True)
+# Afficher les lignes
+render_dataframe_with_links(df)
+st.markdown("</table>", unsafe_allow_html=True)
