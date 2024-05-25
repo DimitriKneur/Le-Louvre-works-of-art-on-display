@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(page_title="🖼 Le Louvre Artworks", 
+                   page_icon=":rocket:", 
+                   layout="wide")
+
 st.title("Paintings on Display Database - Le Louvre Museum")
 
 st.text("")

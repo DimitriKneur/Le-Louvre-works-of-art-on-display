@@ -1,5 +1,9 @@
 import streamlit as st
 
+st.set_page_config(page_title="🖼 Le Louvre Artworks", 
+                   page_icon=":rocket:", 
+                   layout="wide")
+
 st.title("Le Louvre Works of Art on Display - Databases")
 
 st.text("")
@@ -35,7 +39,7 @@ with st.expander("Click here to see what you will find inside"):
 st.text("")
 
 # Lien vers la section "Middle Ages, Renaissance and Modern Times"
-st.page_link("pages/MA_Ren_ModTimes.py", label="Middle Ages, Renaissance, Modern Times Art Objects & Sculptures", icon="⚒️")
+st.page_link("pages/Middle_Ages_Renaissance_Modern_Times_Objects_&_Sculptures.py", label="Middle Ages, Renaissance, Modern Times Art Objects & Sculptures", icon="⚒️")
 with st.expander("Click here to see what you will find inside"):
     st.markdown("- Middle Ages, Renaissance & Modern Times Art Objects")
     st.markdown("- Middle Ages, Renaissance & Modern Times Scupltures")
