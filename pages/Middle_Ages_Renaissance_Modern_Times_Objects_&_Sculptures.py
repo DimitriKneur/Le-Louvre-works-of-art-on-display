@@ -9,15 +9,14 @@ st.title("Middle Ages, Renaissance, Modern Times Art Objects and Sculptures on D
 
 st.text("")
 
-st.text("You will find here the table showing the artworks of the following categories :")
+st.write("You will find here the table showing the artworks of the following categories :")
 
 st.markdown("- Middle Ages, Renaissance & Modern Times Art Objects")
 st.markdown("- Middle Ages, Renaissance & Modern Times Scupltures")
 
 st.text("")
 
-st.text("If you want to display in full width, click on the top-right corner 'Fullscreen'⬇️")
-st.text("button of the table :")
+st.write("If you want to display in full width, click on the top-right corner 'Fullscreen' ⛶ button of the table :")
 
 # Charger les données
 df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_middle_ages_renaissance_modern_times_sculptures_objects.csv')

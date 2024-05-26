@@ -9,7 +9,7 @@ st.title("Antiquities on Display Database - Le Louvre Museum")
 
 st.text("")
 
-st.text("You will find here the table showing the artworks of the following categories :")
+st.write("You will find here the table showing the artworks of the following categories :")
 
 st.markdown("- Greek, Etruscan and Roman Antiquities")
 st.markdown("- Oriental Antiquities")
@@ -17,8 +17,7 @@ st.markdown("- Egyptian Antiquities")
 
 st.text("")
 
-st.text("If you want to display in full width, click on the top-right corner 'Fullscreen'⬇️")
-st.text("button of the table :")
+st.write("If you want to display in full width, click on the top-right corner 'Fullscreen' ⛶ button of the table :")
 
 # Charger les données
 df = pd.read_csv('data/simplified_le_louvre_works_of_art_on_display_antiquities.csv')
@@ -40,11 +39,9 @@ st.data_editor(
 
 st.text("")
 
-st.text("Short of inspiration ? Some of the most famous artworks of these categories are :")
+st.write("Short of inspiration ? Some of the most famous artworks of these categories are :")
 st.markdown("- Victoire de Samothrace")
 st.markdown("- Vénus de Milo")
 st.markdown("- Sarcophage des époux")
 st.markdown("- Le scribe accroupi")
 st.markdown("- Sphinx de Tanis")
-
-st.text("")
