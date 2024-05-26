@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-  <a><img src="Demo_streamlit_le_louvre.gif" width="360px" /></a>
+  <a><img src="Demo_streamlit_le_louvre_2.gif" width="360px" /></a>
 </p>
 
 <br>

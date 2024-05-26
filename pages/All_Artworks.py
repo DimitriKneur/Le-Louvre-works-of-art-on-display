@@ -5,11 +5,11 @@ st.set_page_config(page_title="🖼 Le Louvre Artworks",
                    page_icon=":rocket:", 
                    layout="wide")
 
-st.title("All Artworks on Display Database - Le Louvre Museum")
+st.title("All Artworks on Display - Le Louvre Museum")
 
 st.text("")
 
-st.write("Here is the table of every Le Louvre artwork that is currently on display.")
+st.write("Here is the table of every Le Louvre Museum artwork that is currently on display.")
 
 st.text("")
 
